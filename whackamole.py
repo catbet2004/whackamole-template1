@@ -16,9 +16,8 @@ def main():
         screen = pygame.display.set_mode((640, 512))
         clock = pygame.time.Clock()
         running = True
-        #initial random position for the mole
-        x=random.randrange(0,640,32)
-        y=random.randrange(0,512,32)
+        #position mole to top left for each iteration
+        x,y = 0,0
 
         while running:
             for event in pygame.event.get():
